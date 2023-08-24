@@ -1,0 +1,56 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.title,
+.display {
+  font-size: 50px;
+  text-shadow: 3px 3px black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  animation: bounce 1.5s infinite;
+}
+
+.title {
+  font-size: 70px;
+}
+
+.display {
+  font-size: 50px;
+}
+
+button {
+  margin: 40px;
+  padding: 20px;
+  font-size: 23px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: black;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+}
